@@ -21,5 +21,11 @@ namespace SalesWebMvc.Services
         {
             throw new NotImplementedException();
         }
+
+        public void Insert(Seller obj)
+        {
+            _context.Sdd(obj);
+            _context.SaveChanges();
+        }
     }
 }
